@@ -108,10 +108,16 @@ span.ingridient {
 }
 
 .header-adress {
-  padding: 0 0;
-
   color: var(--main-text);
   text-decoration: none;
+}
+.header-icon {
+  fill: var(--main-text);
+}
+
+.header-adress .header-icon:hover,
+.header-adress .header-icno:focus {
+  fill: currentColor;
 }
 
 .header-adress:hover,
@@ -128,11 +134,23 @@ span.ingridient {
 /* главная страница */
 /* герой  */
 .hero-box {
-  background-color: var(--footer-bg);
+  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/page-bg1.jpg);
+  background-color: #c4c4c4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
   text-align: center;
 }
 
 .hero {
+  padding-top: 200px;
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -146,11 +164,14 @@ span.ingridient {
 .hero-button {
   color: var(--main-white);
   background-color: var(--accent);
+  border-color: transparent;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
+  cursor: pointer;
 }
 /* падинги секций */
 
@@ -191,6 +212,16 @@ span.ingridient {
 
 .feature-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.feature-icon {
+  padding: 25px 100px;
+
+  max-width: 270px;
+  background-color: var(--staff-bg);
+  border-radius: 4px;
+
+  margin-bottom: 30px;
 }
 
 .feature-title {
@@ -247,6 +278,12 @@ span.ingridient {
   list-style-type: none;
 }
 
+.team-cards {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-cards:not(:last-child) {
   margin-right: 30px;
 }
@@ -263,7 +300,6 @@ span.ingridient {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 .team-info {
@@ -272,17 +308,27 @@ span.ingridient {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
-
 .team-link {
-  color: var(--logo-color);
-  text-decoration: none;
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
 }
 
 .team-link:hover,
-.team-linh:focus {
-  color: var(--accent);
+.team-link:focus {
+  background-color: var(--accent);
+}
+
+.team-icon {
+  fill: var(--logo-color);
+}
+
+.team-icon:hover,
+.team-icon:focus {
+  fill: var(--main-white);
 }
 
 /* клиенты */
@@ -298,10 +344,10 @@ span.ingridient {
   list-style-type: none;
 }
 
-/* .client-logo:focus,
+.client-logo:focus,
 .client-logo:hover {
   fill: #2196f3;
-} */
+}
 
 /* /* футер * */
 .page-footer {
@@ -436,7 +482,9 @@ span.footer-logo {
 }
 
 .catalog-image {
-  width: 370px;
+  width: 366px;
+  border: 1px solid #eeeeee;
+  overflow: hidden;
 }
 
 .catalog-image:not(:nth-child(3n)) {
