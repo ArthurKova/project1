@@ -305,7 +305,7 @@ span.ingridient {
   position: absolute;
   content: '';
   bottom: 0;
-  width: 370px;
+  width: 360px;
   height: 70px;
 
   color: var(--main-white);
@@ -390,6 +390,8 @@ span.ingridient {
 }
 
 .team-icon {
+  width: 44px;
+  height: 44px;
   padding: 12px;
   fill: var(--logo-color);
 
@@ -436,6 +438,8 @@ span.ingridient {
 }
 
 .client-icon {
+  width: 170px;
+  height: 92px;
   fill: currentColor;
   padding: 16px 32px;
 }
@@ -502,6 +506,7 @@ span.ingridient {
 
 /* каталог услуг */
 .catalog-list {
+  width: 1170px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
@@ -532,7 +537,6 @@ span.ingridient {
 
 .catalog-link {
   display: block;
-  border: 1px solid #eeeeee;
 
   text-decoration: none;
 
@@ -559,6 +563,11 @@ span.ingridient {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.86;
+}
+
+.catalog-border {
+  border: 1px solid #eeeeee;
+  border-top-style: none;
 }
 
 .catalog-block {
@@ -686,3 +695,32 @@ span.footer-logo {
 
   border-top: 1px solid grey;
 }
+
+/* модалка */
+/* .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  opacity: 1;
+  transition: opcaity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 1;
+  pointer-events: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-height: 300px;
+  min-width: 400px;
+  padding: 15px;
+  background-color: #ffffff;
+} */

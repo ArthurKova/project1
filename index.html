@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styleshw.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styleshw.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     />
   </head>
   <body>
@@ -58,8 +62,20 @@
       <!-- герой -->
       <section class="hero-section">
         <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-button" type="button">Заказать услугу</button>
+        <button data-modal-open class="hero-button" type="button">Заказать услугу</button>
       </section>
+
+      <!-- модалка -->
+      <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, culpa quas. Earum beatae
+            autem iure dolores, vitae ipsum magnam unde!
+          </p>
+          <button data-modal-close>Закрыть</button>
+        </div>
+      </div> -->
+
       <!-- падинги секций  -->
       <!-- особенности -->
       <section class="page-section">
@@ -158,22 +174,25 @@
               <p class="team-info">Product Designer</p>
               <div class="team-social">
                 <a class="team-link" href="" aria-label="Ссылка на Instagram">
-                  <svg class="team-icon" width="20" height="20" viewBox="0 0 32 32">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  <svg class="team-icon">
+                    <use
+                      class="team-icon-link"
+                      href="./images/symbol-defs.svg#icon-instagram"
+                    ></use>
                   </svg>
                 </a>
                 <a class="team-link" href="" aria-label="Ссылка на Twitter">
-                  <svg class="team-icon" width="20" hight="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
                 <a class="team-link" href="" aria-label="Ссылка на Facebook">
-                  <svg class="team-icon" width="20" hight="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a class="team-link" href="" aria-label="Ссылка на LinkedIn">
-                  <svg class="team-icon" width="20" hight="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -191,22 +210,22 @@
               <p class="team-info">Frontend Developer</p>
               <div class="team-social">
                 <a class="team-link" href="" aria-label="Ссылка на Instagram">
-                  <svg class="team-icon" width="20" height="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
                 <a class="team-link" href="" aria-label="Ссылка на Twitter">
-                  <svg class="team-icon" width="20" hight="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
                 <a class="team-link" href="" aria-label="Ссылка на Facebook">
-                  <svg class="team-icon" width="20" hight="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a class="team-link" href="" aria-label="Ссылка на LinkedIn">
-                  <svg class="team-icon" width="20" hight="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -224,22 +243,22 @@
               <p class="team-info">Marketing</p>
               <div class="team-social">
                 <a class="team-link" href="" aria-label="Ссылка на Instagram">
-                  <svg class="team-icon" width="20" height="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
                 <a class="team-link" href="" aria-label="Ссылка на Twitter">
-                  <svg class="team-icon" width="20" hight="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
                 <a class="team-link" href="" aria-label="Ссылка на Facebook">
-                  <svg class="team-icon" width="20" hight="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a class="team-link" href="" aria-label="Ссылка на LinkedIn">
-                  <svg class="team-icon" width="20" hight="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -257,22 +276,22 @@
               <p class="team-info">UI Designer</p>
               <div class="team-social">
                 <a class="team-link" href="" aria-label="Ссылка на Instagram">
-                  <svg class="team-icon" width="20" height="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
                 <a class="team-link" href="" aria-label="Ссылка на Twitter">
-                  <svg class="team-icon" width="20" hight="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
                 <a class="team-link" href="" aria-label="Ссылка на Facebook">
-                  <svg class="team-icon" width="20" hight="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a class="team-link" href="" aria-label="Ссылка на LinkedIn">
-                  <svg class="team-icon" width="20" hight="20" viewBox="0 0 32 32">
+                  <svg class="team-icon">
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -288,42 +307,42 @@
           <ul class="client-list">
             <li class="client-item">
               <a class="client-link" href="">
-                <svg class="client-icon" width="106" height="60">
+                <svg class="client-icon">
                   <use href="./images/symbol-defs.svg#icon-group2"></use>
                 </svg>
               </a>
             </li>
             <li class="client-item">
               <a class="client-link" href="">
-                <svg class="client-icon" width="106" height="60">
+                <svg class="client-icon">
                   <use href="./images/symbol-defs.svg#icon-group3"></use>
                 </svg>
               </a>
             </li>
             <li class="client-item">
               <a class="client-link" href="">
-                <svg class="client-icon" width="106" height="60">
+                <svg class="client-icon">
                   <use href="./images/symbol-defs.svg#icon-group4"></use>
                 </svg>
               </a>
             </li>
             <li class="client-item">
               <a class="client-link" href="">
-                <svg class="client-icon" width="106" height="60">
+                <svg class="client-icon">
                   <use href="./images/symbol-defs.svg#icon-group5"></use>
                 </svg>
               </a>
             </li>
             <li class="client-item">
               <a class="client-link" href="">
-                <svg class="client-icon" width="106" height="60">
+                <svg class="client-icon">
                   <use href="./images/symbol-defs.svg#icon-group6"></use>
                 </svg>
               </a>
             </li>
             <li class="client-item">
               <a class="client-link" href="">
-                <svg class="client-icon" width="106" height="60">
+                <svg class="client-icon">
                   <use href="./images/symbol-defs.svg#icon-group7"></use>
                 </svg>
               </a>
@@ -385,5 +404,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
