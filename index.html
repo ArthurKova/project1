@@ -398,12 +398,19 @@
               id="distribution"
               placeholder="   E-mail"
             />
-            <label class="signup-button" for="distribution" type="submit"
+
+            <button class="signup-button" type="submit">
+              Подписаться
+              <svg class="signup-icon">
+                <use href="/images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+            <!-- <label class="signup-button" for="distribution" type="submit"
               >Подписаться
               <svg class="signup-icon">
                 <use href="/images/symbol-defs.svg#icon-icon-send"></use>
               </svg>
-            </label>
+            </label> -->
           </form>
         </div>
       </div>
@@ -455,16 +462,15 @@
           />
 
           <div class="modal-accept">
-            <input class="hidden-input" type="checkbox" name="agreement" />
-            <label class="modal-agree" for="agreement" id="agreement"
-              >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
-            >
-            <svg class="agree-icon" width="18" height="18">
-              <use href="./images/symbol-defs.svg#vector-icon"></use>
-            </svg>
-
-            <button class="modal-button" type="submit">Отправить</button>
+            <label class="modal-agree">
+              <input class="hidden-input" type="checkbox" name="agreement" value="accept" />
+              Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+              <svg class="agree-icon" width="16" height="16">
+                <use href="./images/symbol-defs.svg#vector-icon"></use>
+              </svg>
+            </label>
           </div>
+          <button class="modal-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
