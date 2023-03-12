@@ -712,6 +712,7 @@ span.footer-logo {
   padding: 10px 28px;
 
   color: var(--main-white);
+  border-color: transparent;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
