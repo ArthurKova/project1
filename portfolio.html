@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -12,10 +16,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styleshw.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-    />
   </head>
   <body>
     <!-- хедер -->
@@ -316,7 +316,7 @@
           </address>
         </div>
         <div>
-          <b class="signup first-join">ПРИСОЕДИНЯЙТЕСЬ</b>
+          <b class="signup">ПРИСОЕДИНЯЙТЕСЬ</b>
           <ul class="footer-social">
             <li class="footer-socialitem">
               <a class="team-link footer-media" href="" aria-label="Ссылка на Instagram">
@@ -350,6 +350,22 @@
         </div>
         <div>
           <b class="signup">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
+          <form>
+            <input
+              class="signup-form"
+              type="email"
+              name="distribution"
+              id="distribution"
+              placeholder="   E-mail"
+            />
+
+            <button class="signup-button" type="submit">
+              Подписаться
+              <svg class="signup-icon">
+                <use href="/images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

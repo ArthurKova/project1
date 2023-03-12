@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -12,10 +16,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styleshw.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-    />
   </head>
   <body>
     <!-- хедер -->
@@ -405,12 +405,6 @@
                 <use href="/images/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
-            <!-- <label class="signup-button" for="distribution" type="submit"
-              >Подписаться
-              <svg class="signup-icon">
-                <use href="/images/symbol-defs.svg#icon-icon-send"></use>
-              </svg>
-            </label> -->
           </form>
         </div>
       </div>
@@ -451,15 +445,14 @@
           </div>
 
           <label class="modal-text" for="modal-comment">Комментарий</label>
-          <input
+          <textarea
             class="modal-input modal-comment"
-            type="text"
             name="modal-comment"
             id="modal-comment"
-            cols="10"
+            cols="30"
             rows="10"
             placeholder="Введите текст"
-          />
+          ></textarea>
 
           <div class="modal-accept">
             <label class="modal-agree">
