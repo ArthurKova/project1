@@ -1,0 +1,35 @@
+.footer-adress {
+  list-style-type: none;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 60px;
+
+  li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-adress__white {
+  color: var(--main-white);
+  text-decoration: none;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.footer-adress__grey {
+  color: var(--footer-adress);
+  text-decoration: none;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent);
+  }
+}

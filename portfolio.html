@@ -5,47 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styleshw.css" />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
   <body>
-    <!-- хедер -->
+    <!-- header -->
     <header>
-      <div class="container header-box">
-        <a class="logo" href="./index.html"><span class="ingridient">Web</span>Studio</a>
+      <div class="container header-container">
+        <!--logo -->
+        <a class="logo" href="./index.html"><span class="logo__blue">Web</span>Studio</a>
 
-        <!-- навигация -->
+        <!-- header-nav -->
         <nav>
-          <ul class="header-info">
-            <li class="header-list"><a class="header-links" href="./index.html">Студия</a></li>
-            <li class="header-list">
-              <a class="header-links current-page" href="./portfolio.html">Портфолио</a>
+          <ul class="header-nav">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./index.html">Студия</a>
             </li>
-            <li class="header-list"><a class="header-links" href="./contacs.html">Контакты</a></li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link-current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./contacs.html">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <!-- контакты    -->
-        <ul class="header-info contacts">
-          <li class="header-list">
-            <a class="header-adress" href="mailto:info@devstudio.com">
-              <svg class="header-icon" width="16" height="12">
+        <!-- header-contact  -->
+        <ul class="header-contact">
+          <li class="header-contact__item">
+            <a class="header-contact__link" href="mailto:info@devstudio.com">
+              <svg class="header-contact__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header-list">
-            <a class="header-adress" href="tel:+380961111111">
-              <svg class="header-icon" width="16" height="12">
+          <li class="header-contact__item">
+            <a class="header-contact__link" href="tel:+380961111111">
+              <svg class="header-contact__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -53,7 +56,7 @@
           </li>
         </ul>
       </div>
-      <div class="line"></div>
+      <div class="header-line"></div>
     </header>
 
     <main>
@@ -61,238 +64,184 @@
         <div class="container">
           <!-- каталог -->
 
-          <h1 class="hide-catalog">Каталог</h1>
+          <h1 class="hidden-title">Каталог</h1>
           <ul class="catalog">
-            <li class="catalog-item"><button class="catalog-button" type="button">Все</button></li>
-            <li class="catalog-item">
-              <button class="catalog-button" type="button">Веб-сайты</button>
+            <li><button class="catalog__button" type="button">Все</button></li>
+            <li>
+              <button class="catalog__button" type="button">Веб-сайты</button>
             </li>
-            <li class="catalog-item">
-              <button class="catalog-button" type="button">Приложения</button>
+            <li>
+              <button class="catalog__button" type="button">Приложения</button>
             </li>
-            <li class="catalog-item">
-              <button class="catalog-button" type="button">Дизайн</button>
+            <li>
+              <button class="catalog__button" type="button">Дизайн</button>
             </li>
-            <li class="catalog-item">
-              <button class="catalog-button" type="button">Маркетинг</button>
+            <li>
+              <button class="catalog__button" type="button">Маркетинг</button>
             </li>
           </ul>
           <!-- каталог услуг -->
-          <ul class="catalog-list">
-            <li class="catalog-image">
-              <a class="catalog-link" href="">
-                <div class="catalog-animation">
-                  <img
-                    class="catalog-picture"
-                    src="./images/portfolio1.jpg"
-                    width="370"
-                    height="294"
-                    alt="фото сайта"
-                  />
-                  <div class="catalog-block">
-                    <p class="catalog-text">
+          <ul class="gallery">
+            <li class="gallery__card">
+              <a class="gallery__link" href="">
+                <div class="gallery__block">
+                  <img src="./images/portfolio1.jpg" width="370" height="294" alt="фото сайта" />
+                  <div class="gallery__hidden">
+                    <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит получить посетителю получить исчерпывающие сведения
                       о компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="catalog-border">
-                  <h2 class="catalog-header">Технокряк</h2>
-                  <p class="catalog-info">Веб-сайт</p>
+                <div class="gallery__border">
+                  <h2 class="gallery__title">Технокряк</h2>
+                  <p class="gallery__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-image">
-              <a class="catalog-link" href="">
-                <div class="catalog-animation">
-                  <img
-                    class="catalog-picture"
-                    src="./images/portfolio2.jpg"
-                    width="370"
-                    height="294"
-                    alt="фото сайта"
-                  />
-                  <div class="catalog-block">
-                    <p class="catalog-text">
+            <li class="gallery__card">
+              <a class="gallery__link" href="">
+                <div class="gallery__block">
+                  <img src="./images/portfolio2.jpg" width="370" height="294" alt="фото сайта" />
+                  <div class="gallery__hidden">
+                    <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит получить посетителю получить исчерпывающие сведения
                       о компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="catalog-border">
-                  <h2 class="catalog-header">Постер New Orlean vs Golden Star</h2>
-                  <p class="catalog-info">Дизайн</p>
+                <div class="gallery__border">
+                  <h2 class="gallery__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="gallery__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-image">
-              <a class="catalog-link" href="">
-                <div class="catalog-animation">
-                  <img
-                    class="catalog-picture"
-                    src="./images/portfolio3.jpg"
-                    width="370"
-                    height="294"
-                    alt="фото сайта"
-                  />
-                  <div class="catalog-block">
-                    <p class="catalog-text">
+            <li class="gallery__card">
+              <a class="gallery__link" href="">
+                <div class="gallery__block">
+                  <img src="./images/portfolio3.jpg" width="370" height="294" alt="фото сайта" />
+                  <div class="gallery__hidden">
+                    <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит получить посетителю получить исчерпывающие сведения
                       о компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="catalog-border">
-                  <h2 class="catalog-header">Ресторан Seafood</h2>
-                  <p class="catalog-info">Приложение</p>
+                <div class="gallery__border">
+                  <h2 class="gallery__title">Ресторан Seafood</h2>
+                  <p class="gallery__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-image">
-              <a class="catalog-link" href="">
-                <div class="catalog-animation">
-                  <img
-                    class="catalog-picture"
-                    src="./images/portfolio4.jpg"
-                    width="370"
-                    height="294"
-                    alt="фото сайта"
-                  />
-                  <div class="catalog-block">
-                    <p class="catalog-text">
+            <li class="gallery__card">
+              <a class="gallery__link" href="">
+                <div class="gallery__block">
+                  <img src="./images/portfolio4.jpg" width="370" height="294" alt="фото сайта" />
+                  <div class="gallery__hidden">
+                    <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит получить посетителю получить исчерпывающие сведения
                       о компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="catalog-border">
-                  <h2 class="catalog-header">Проект Prime</h2>
-                  <p class="catalog-info">маркетинг</p>
+                <div class="gallery__border">
+                  <h2 class="gallery__title">Проект Prime</h2>
+                  <p class="gallery__text">маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-image">
-              <a class="catalog-link" href="">
-                <div class="catalog-animation">
-                  <img
-                    class="catalog-picture"
-                    src="./images/portfolio5.jpg"
-                    width="370"
-                    height="294"
-                    alt="фото сайта"
-                  />
-                  <div class="catalog-block">
-                    <p class="catalog-text">
+            <li class="gallery__card">
+              <a class="gallery__link" href="">
+                <div class="gallery__block">
+                  <img src="./images/portfolio5.jpg" width="370" height="294" alt="фото сайта" />
+                  <div class="gallery__hidden">
+                    <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит получить посетителю получить исчерпывающие сведения
                       о компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="catalog-border">
-                  <h2 class="catalog-header">Проект Boxes</h2>
-                  <p class="catalog-info">Приложение</p>
+                <div class="gallery__border">
+                  <h2 class="gallery__title">Проект Boxes</h2>
+                  <p class="gallery__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-image">
-              <a class="catalog-link" href="">
-                <div class="catalog-animation">
-                  <img
-                    class="catalog-picture"
-                    src="./images/portfolio6.jpg"
-                    width="370"
-                    height="294"
-                    alt="фото сайта"
-                  />
-                  <div class="catalog-block">
-                    <p class="catalog-text">
+            <li class="gallery__card">
+              <a class="gallery__link" href="">
+                <div class="gallery__block">
+                  <img src="./images/portfolio6.jpg" width="370" height="294" alt="фото сайта" />
+                  <div class="gallery__hidden">
+                    <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит получить посетителю получить исчерпывающие сведения
                       о компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="catalog-border">
-                  <h2 class="catalog-header">Inspiration has no Borders</h2>
-                  <p class="catalog-info">Веб-сайт</p>
+                <div class="gallery__border">
+                  <h2 class="gallery__title">Inspiration has no Borders</h2>
+                  <p class="gallery__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-image">
-              <a class="catalog-link" href="">
-                <div class="catalog-animation">
-                  <img
-                    class="catalog-picture"
-                    src="./images/portfolio7.jpg"
-                    width="370"
-                    height="294"
-                    alt="фото сайта"
-                  />
-                  <div class="catalog-block">
-                    <p class="catalog-text">
+            <li class="gallery__card">
+              <a class="gallery__link" href="">
+                <div class="gallery__block">
+                  <img src="./images/portfolio7.jpg" width="370" height="294" alt="фото сайта" />
+                  <div class="gallery__hidden">
+                    <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит получить посетителю получить исчерпывающие сведения
                       о компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="catalog-border">
-                  <h2 class="catalog-header">Издание Limited Edition</h2>
-                  <p class="catalog-info">Дизайн</p>
+                <div class="gallery__border">
+                  <h2 class="gallery__title">Издание Limited Edition</h2>
+                  <p class="gallery__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-image">
-              <a class="catalog-link" href="">
-                <div class="catalog-animation">
-                  <img
-                    class="catalog-picture"
-                    src="./images/portfolio8.jpg"
-                    width="370"
-                    height="294"
-                    alt="фото сайта"
-                  />
-                  <div class="catalog-block">
-                    <p class="catalog-text">
+            <li class="gallery__card">
+              <a class="gallery__link" href="">
+                <div class="gallery__block">
+                  <img src="./images/portfolio8.jpg" width="370" height="294" alt="фото сайта" />
+                  <div class="gallery__hidden">
+                    <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит получить посетителю получить исчерпывающие сведения
                       о компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="catalog-border">
-                  <h2 class="catalog-header">Проект Lab</h2>
-                  <p class="catalog-info">маркетинг</p>
+                <div class="gallery__border">
+                  <h2 class="gallery__title">Проект Lab</h2>
+                  <p class="gallery__text">маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="catalog-image">
-              <a class="catalog-link" href="">
-                <div class="catalog-animation">
-                  <img
-                    class="catalog-picture"
-                    src="./images/portfolio9.jpg"
-                    width="370"
-                    height="294"
-                    alt="фото сайта"
-                  />
-                  <div class="catalog-block">
-                    <p class="catalog-text">
+            <li class="gallery__card">
+              <a class="gallery__link" href="">
+                <div class="gallery__block">
+                  <img src="./images/portfolio9.jpg" width="370" height="294" alt="фото сайта" />
+                  <div class="gallery__hidden">
+                    <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит получить посетителю получить исчерпывающие сведения
                       о компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="catalog-border">
-                  <h2 class="catalog-header">Growning Business</h2>
-                  <p class="catalog-info">Приложение</p>
+                <div class="gallery__border">
+                  <h2 class="gallery__title">Growning Business</h2>
+                  <p class="gallery__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -300,68 +249,73 @@
         </div>
       </section>
     </main>
-    <!-- футер -->
+    <!-- footer -->
     <footer class="page-footer">
-      <div class="container footer-nav">
+      <div class="container footer-block">
         <div>
-          <a class="logo logo-link" href="./index.html"
-            ><span class="ingridient">Web</span><span class="footer-logo">Studio</span>
+          <!-- logo -->
+          <a class="logo footer-part" href="./index.html"
+            ><span class="logo__blue">Web</span><span class="logo__white">Studio</span>
           </a>
           <address>
             <ul class="footer-adress">
-              <li><a class="white-adress" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
-              <li><a class="grey-adress" href="mailto:info@example.com">info@example.com</a></li>
-              <li><a class="grey-adress" href="tel:+380991111111">+38 099 111 11 11</a></li>
+              <li><a class="footer-adress__white" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+              <li>
+                <a class="footer-adress__grey" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li><a class="footer-adress__grey" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
           </address>
         </div>
+        <!-- footer-join -->
         <div>
-          <b class="signup">ПРИСОЕДИНЯЙТЕСЬ</b>
-          <ul class="footer-social">
-            <li class="footer-socialitem">
-              <a class="team-link footer-media" href="" aria-label="Ссылка на Instagram">
-                <svg class="team-icon footer-icon">
+          <b class="footer-join">ПРИСОЕДИНЯЙТЕСЬ</b>
+          <ul class="footer-join__list">
+            <li>
+              <a class="footer-join__link" href="" aria-label="Ссылка на Instagram">
+                <svg class="footer-join__icon">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socialitem">
-              <a class="team-link footer-media" href="" aria-label="Ссылка на Twitter">
-                <svg class="team-icon footer-icon">
+            <li>
+              <a class="footer-join__link" href="" aria-label="Ссылка на Twitter">
+                <svg class="footer-join__icon">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socialitem">
-              <a class="team-link footer-media" href="" aria-label="Ссылка на Facebook">
-                <svg class="team-icon footer-icon">
+            <li>
+              <a class="footer-join__link" href="" aria-label="Ссылка на Facebook">
+                <svg class="footer-join__icon">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socialitem">
-              <a class="team-link footer-media" href="" aria-label="Ссылка на LinkedIn">
-                <svg class="team-icon footer-icon">
+            <li>
+              <a class="footer-join__link" href="" aria-label="Ссылка на LinkedIn">
+                <svg class="footer-join__icon">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+        <!-- footer-subscribe -->
         <div>
-          <b class="signup">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
+          <b class="footer-sub">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
           <form>
             <input
-              class="signup-form"
+              class="footer-sub__form"
               type="email"
               name="distribution"
               id="distribution"
               placeholder="   E-mail"
             />
 
-            <button class="signup-button" type="submit">
+            <button class="footer-sub__button" type="submit">
               Подписаться
-              <svg class="signup-icon">
+              <svg class="footer-sub__icon">
                 <use href="/images/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
