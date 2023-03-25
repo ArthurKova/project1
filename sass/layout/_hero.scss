@@ -18,11 +18,11 @@
     max-height: 100%;
   }
 
-  @media screen and (max-width: 1169px) {
+  @media screen and (max-width: 1200px) {
     padding: 118px 0;
   }
 
-  @media screen and (min-width: 1170px) {
+  @media screen and (min-width: 1200px) {
     background-image: url(../../images/desk-image/hero-desktop.jpg);
     max-width: 1600px;
     max-height: 100%;
@@ -50,6 +50,12 @@
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
+
+  @media screen and (min-width: 1200px) {
+    width: 700px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-section__button {
