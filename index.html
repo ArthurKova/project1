@@ -20,39 +20,47 @@
         <!--logo -->
         <a class="logo" href="./index.html"><span class="logo__blue">Web</span>Studio</a>
 
-        <!-- header-nav -->
-        <nav>
-          <ul class="header-nav">
-            <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link-current" href="./index.html">Студия</a>
+        <div class="header-block">
+          <!-- header-nav -->
+          <nav>
+            <ul class="header-nav">
+              <li class="header-nav__item">
+                <a class="header-nav__link header-nav__link-current" href="./index.html">Студия</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="./contacs.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- header-contact  -->
+          <ul class="header-contact">
+            <li class="header-contact__item">
+              <a class="header-contact__link" href="mailto:info@devstudio.com">
+                <svg class="header-contact__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./contacs.html">Контакты</a>
+            <li class="header-contact__item">
+              <a class="header-contact__link" href="tel:+380961111111">
+                <svg class="header-contact__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <!-- header-contact  -->
-        <ul class="header-contact">
-          <li class="header-contact__item">
-            <a class="header-contact__link" href="mailto:info@devstudio.com">
-              <svg class="header-contact__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contact__item">
-            <a class="header-contact__link" href="tel:+380961111111">
-              <svg class="header-contact__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
+        <button class="mob-menu" type="button">
+          <svg class="menu-icon" width="40" height="40">
+            <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross.svg"></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu.svg"></use>
+          </svg>
+        </button>
       </div>
       <div class="header-line"></div>
     </header>
@@ -121,19 +129,34 @@
           <h2 class="service">Чем мы занимаемся</h2>
           <ul class="service__list">
             <li class="service__item">
-              <img src="./images/img1.jpg" width="370" height="294" alt="наши услуги" />
+              <img
+                src="./images/desk-image/sect-image.jpg"
+                width="370"
+                height="294"
+                alt="наши услуги"
+              />
               <div class="service__block">
                 <p class="service__text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЕ</p>
               </div>
             </li>
             <li class="service__item">
-              <img src="./images/img2.jpg" width="370" height="294" alt="наши услгуи" />
+              <img
+                src="./images/desk-image/sect2-image.jpg"
+                width="370"
+                height="294"
+                alt="наши услгуи"
+              />
               <div class="service__block">
                 <p class="service__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
               </div>
             </li>
             <li class="service__item">
-              <img src="./images/img3.jpg" width="370" height="294" alt="наши услуги" />
+              <img
+                src="./images/desk-image/sect3-image.jpg"
+                width="370"
+                height="294"
+                alt="наши услуги"
+              />
               <div class="service__block">
                 <p class="service__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
               </div>
@@ -150,7 +173,7 @@
             <li class="team__cards">
               <img
                 class="team__image"
-                src="./images/photo1.jpg"
+                src="./images/ph-image/team-small.jpg"
                 width="270"
                 height="260"
                 alt="фото сотрудника"
@@ -183,7 +206,7 @@
             <li class="team__cards">
               <img
                 class="team__image"
-                src="./images/photo2.jpg"
+                src="./images/ph-image/team2-small.jpg"
                 width="270"
                 height="260"
                 alt="фото сотрудника"
@@ -216,7 +239,7 @@
             <li class="team__cards">
               <img
                 class="team__image"
-                src="./images/photo3.jpg"
+                src="./images/ph-image/team3-small.jpg"
                 width="270"
                 height="260"
                 alt="фото сотрудника"
@@ -249,7 +272,7 @@
             <li class="team__cards">
               <img
                 class="team__image"
-                src="./images/photo4.jpg"
+                src="./images/ph-image/team4-small.jpg"
                 width="270"
                 height="260"
                 alt="фото сотрудника"
@@ -336,57 +359,61 @@
     <!-- footer -->
     <footer class="page-footer">
       <div class="container footer-block">
-        <div>
-          <!-- logo -->
-          <a class="logo footer-part" href="./index.html"
-            ><span class="logo__blue">Web</span><span class="logo__white">Studio</span>
-          </a>
-          <address>
-            <ul class="footer-adress">
-              <li><a class="footer-adress__white" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+        <div class="footer-tab-geo">
+          <div>
+            <!-- logo -->
+            <a class="logo footer-part" href="./index.html"
+              ><span class="logo__blue">Web</span><span class="logo__white">Studio</span>
+            </a>
+            <address>
+              <ul class="footer-adress">
+                <li><a class="footer-adress__white" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li>
+                  <a class="footer-adress__grey" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li>
+                  <a class="footer-adress__grey" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!-- footer-join -->
+          <div>
+            <b class="footer-join">ПРИСОЕДИНЯЙТЕСЬ</b>
+            <ul class="footer-join__list">
               <li>
-                <a class="footer-adress__grey" href="mailto:info@example.com">info@example.com</a>
+                <a class="footer-join__link" href="" aria-label="Ссылка на Instagram">
+                  <svg class="footer-join__icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li><a class="footer-adress__grey" href="tel:+380991111111">+38 099 111 11 11</a></li>
+              <li>
+                <a class="footer-join__link" href="" aria-label="Ссылка на Twitter">
+                  <svg class="footer-join__icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-join__link" href="" aria-label="Ссылка на Facebook">
+                  <svg class="footer-join__icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-join__link" href="" aria-label="Ссылка на LinkedIn">
+                  <svg class="footer-join__icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
-          </address>
-        </div>
-        <!-- footer-join -->
-        <div>
-          <b class="footer-join">ПРИСОЕДИНЯЙТЕСЬ</b>
-          <ul class="footer-join__list">
-            <li>
-              <a class="footer-join__link" href="" aria-label="Ссылка на Instagram">
-                <svg class="footer-join__icon">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-join__link" href="" aria-label="Ссылка на Twitter">
-                <svg class="footer-join__icon">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-join__link" href="" aria-label="Ссылка на Facebook">
-                <svg class="footer-join__icon">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-join__link" href="" aria-label="Ссылка на LinkedIn">
-                <svg class="footer-join__icon">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <!-- footer-subscribe -->
-        <div>
+        <div class="footer-sub-geo">
           <b class="footer-sub">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
           <form>
             <input
