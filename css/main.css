@@ -392,7 +392,7 @@ img {
   }
 }
 
-.footer-sub__button, .hero-section__button {
+.modal-button, .footer-sub__button, .hero-section__button {
   width: 200px;
   height: 50px;
   color: var(--main-white);
@@ -496,7 +496,7 @@ img {
   display: block;
 }
 
-.mob-menu .header-block .header-line {
+.header-line {
   border: 1px solid #ececec;
 }
 
@@ -916,6 +916,7 @@ img {
 }
 
 .team__icon {
+  border-radius: 25%;
   width: 44px;
   height: 44px;
   padding: 12px;
@@ -1146,7 +1147,7 @@ img {
 }
 
 .catalog {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
@@ -1158,8 +1159,17 @@ img {
 .catalog li:not(:last-child) {
   margin-right: 8px;
 }
+@media screen and (max-width: 767px) {
+  .catalog {
+    justify-content: start;
+  }
+  .catalog li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
 
 .catalog__button {
+  padding: 6px 22px;
   border-radius: 6px;
   border-color: transparent;
   color: var(--second-text);
@@ -1299,11 +1309,16 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 580px;
+  height: auto;
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 .close-btn {
@@ -1337,6 +1352,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  text-align: center;
 }
 
 .modal-item {
@@ -1407,6 +1423,12 @@ img {
   position: relative;
   text-align: center;
 }
+@media screen and (max-width: 1199px) {
+  .modal-accept {
+    display: flex;
+    justify-content: end;
+  }
+}
 
 .hidden-input {
   -webkit-appearance: none;
@@ -1428,6 +1450,11 @@ img {
   line-height: 1.71;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 1199px) {
+  .modal-agree {
+    font-size: 12px;
+  }
+}
 
 .modal-icon {
   position: absolute;
@@ -1439,29 +1466,23 @@ img {
 .agree-icon {
   display: inline-block;
   position: absolute;
-  top: 2px;
+  top: 0px;
   left: 6px;
   fill: var(--main-white);
   border: 1px solid var(--second-text);
   border-radius: 4px;
   cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .agree-icon {
+    left: 0px;
+  }
+}
 
 .modal-button {
-  max-width: 200px;
-  max-height: 50px;
   padding: 10px 56px;
   margin-left: auto;
   margin-right: auto;
-  color: var(--main-white);
-  background-color: var(--accent);
-  border-color: transparent;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button:hover, .modal-button:focus {

@@ -1,5 +1,5 @@
 .catalog {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
@@ -12,9 +12,17 @@
   li:not(:last-child) {
     margin-right: 8px;
   }
+
+  @media screen and (max-width: 767px) {
+    justify-content: start;
+    li:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .catalog__button {
+  padding: 6px 22px;
   border-radius: 6px;
   border-color: transparent;
 
