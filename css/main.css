@@ -474,6 +474,11 @@ img {
     align-items: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header-block {
+    align-items: baseline;
+  }
+}
 
 .mob-menu {
   display: block;
@@ -793,7 +798,7 @@ img {
 .service__block {
   position: absolute;
   content: "";
-  bottom: 0;
+  bottom: 0px;
   width: 370px;
   height: 70px;
   color: var(--main-white);
