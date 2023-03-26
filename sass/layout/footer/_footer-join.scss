@@ -11,13 +11,16 @@
 .footer-join__list {
   display: flex;
   margin: 0;
-  margin-bottom: 60px;
 
   list-style-type: none;
   justify-content: center;
 
   li:not(:last-child) {
     margin-right: 10px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
   }
 }
 

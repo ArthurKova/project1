@@ -18,105 +18,116 @@
     <header>
       <div class="container header-container">
         <!--logo -->
-        <a class="logo" href="./index.html"><span class="logo__blue">Web</span>Studio</a>
+        <a class="logo logo-space" href="./index.html"><span class="logo__blue">Web</span>Studio</a>
 
-        <!-- header-nav -->
-        <nav>
-          <ul class="header-nav">
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./index.html">Студия</a>
+        <div class="header-block">
+          <!-- header-nav -->
+          <nav class="nav-block">
+            <ul class="header-nav">
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="./index.html">Студия</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link header-nav__link-current" href="./contacs.html"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- header-contact  -->
+          <ul class="header-contact">
+            <li class="header-contact__item">
+              <a class="header-contact__link" href="mailto:info@devstudio.com">
+                <svg class="header-contact__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link-current" href="./contacs.html"
-                >Контакты</a
+            <li class="header-contact__item">
+              <a class="header-contact__link" href="tel:+380961111111">
+                <svg class="header-contact__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
           </ul>
-        </nav>
-        <!-- header-contact  -->
-        <ul class="header-contact">
-          <li class="header-contact__item">
-            <a class="header-contact__link" href="mailto:info@devstudio.com">
-              <svg class="header-contact__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contact__item">
-            <a class="header-contact__link" href="tel:+380961111111">
-              <svg class="header-contact__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
+        <button data-menu-open class="mob-menu">
+          <svg class="mob-menu__icon" width="40" height="40">
+            <use class="mob-menu__icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
+            <use class="mob-menu__icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
       <div class="header-line"></div>
     </header>
 
     <main></main>
-
     <!-- footer -->
     <footer class="page-footer">
       <div class="container footer-block">
-        <div>
-          <!-- logo -->
-          <a class="logo footer-part" href="./index.html"
-            ><span class="logo__blue">Web</span><span class="logo__white">Studio</span>
-          </a>
-          <address>
-            <ul class="footer-adress">
-              <li><a class="footer-adress__white" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+        <div class="footer-tab-geo">
+          <div>
+            <!-- logo -->
+            <a class="logo footer-part" href="./index.html"
+              ><span class="logo__blue">Web</span><span class="logo__white">Studio</span>
+            </a>
+            <address>
+              <ul class="footer-adress">
+                <li><a class="footer-adress__white" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li>
+                  <a class="footer-adress__grey" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li>
+                  <a class="footer-adress__grey" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!-- footer-join -->
+          <div>
+            <b class="footer-join">ПРИСОЕДИНЯЙТЕСЬ</b>
+            <ul class="footer-join__list">
               <li>
-                <a class="footer-adress__grey" href="mailto:info@example.com">info@example.com</a>
+                <a class="footer-join__link" href="" aria-label="Ссылка на Instagram">
+                  <svg class="footer-join__icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li><a class="footer-adress__grey" href="tel:+380991111111">+38 099 111 11 11</a></li>
+              <li>
+                <a class="footer-join__link" href="" aria-label="Ссылка на Twitter">
+                  <svg class="footer-join__icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-join__link" href="" aria-label="Ссылка на Facebook">
+                  <svg class="footer-join__icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-join__link" href="" aria-label="Ссылка на LinkedIn">
+                  <svg class="footer-join__icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
-          </address>
-        </div>
-        <!-- footer-join -->
-        <div>
-          <b class="footer-join">ПРИСОЕДИНЯЙТЕСЬ</b>
-          <ul class="footer-join__list">
-            <li>
-              <a class="footer-join__link" href="" aria-label="Ссылка на Instagram">
-                <svg class="footer-join__icon">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-join__link" href="" aria-label="Ссылка на Twitter">
-                <svg class="footer-join__icon">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-join__link" href="" aria-label="Ссылка на Facebook">
-                <svg class="footer-join__icon">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-join__link" href="" aria-label="Ссылка на LinkedIn">
-                <svg class="footer-join__icon">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <!-- footer-subscribe -->
-        <div>
+        <div class="footer-sub-geo">
           <b class="footer-sub">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
-          <form>
+          <form class="footer-sub__block">
             <input
               class="footer-sub__form"
               type="email"

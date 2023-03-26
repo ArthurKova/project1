@@ -3,7 +3,9 @@
 @import './base/geo';
 @import './components/button';
 @import './layout/logo';
-@import './layout/header';
+@import './layout/header/header';
+@import './layout/header/header-contacs';
+@import './layout/header/header-nav';
 @import './layout/hero';
 @import './layout/feature';
 @import './layout/service';

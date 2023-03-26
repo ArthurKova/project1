@@ -8,7 +8,7 @@
 /* футер адрес полубелый background: rgba(255, 255, 255, 0.6); */
 /* герой цвет текста rgba(255, 255, 255, 1) */
 /* цвет лого ссылок #AFB1B8 */
-
+// colors
 :root {
   --main-text: #757575;
   --accent: #2196f3;
@@ -20,7 +20,7 @@
   --footer-bg: #2f303a;
   --footer-adress: rgba(255, 255, 255, 0.6);
 }
-
+// main vars
 body {
   margin: 0;
 
@@ -33,7 +33,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Утилиты */
+/* utility*/
 p {
   margin: 0;
 }

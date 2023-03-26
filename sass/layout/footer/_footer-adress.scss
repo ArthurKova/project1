@@ -3,10 +3,16 @@
   font-style: normal;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 60px;
 
   li:not(:last-child) {
     margin-bottom: 9px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
   }
 }
 

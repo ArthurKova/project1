@@ -1,3 +1,4 @@
+// main section geometry
 .container {
   width: 100%;
   padding-left: 15px;
@@ -15,9 +16,9 @@
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
-  outline: 1px solid tomato;
+  // outline: 1px solid tomato;
 }
-
+// section geomnetry
 .page-section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -27,37 +28,34 @@
     padding-bottom: 94px;
   }
 }
-
+// footer geometry
 .page-footer {
   background-color: var(--footer-bg);
 }
 
 .container.footer-block {
-  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
   }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-tab-geo {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-around;
     align-items: baseline;
-  }
-
-  @media screen and (min-width: 1200px) {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
 .footer-sub-geo {
-  display: block;
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;

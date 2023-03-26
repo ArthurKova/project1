@@ -18,47 +18,52 @@
     <header>
       <div class="container header-container">
         <!--logo -->
-        <a class="logo" href="./index.html"><span class="logo__blue">Web</span>Studio</a>
+        <a class="logo logo-space" href="./index.html"><span class="logo__blue">Web</span>Studio</a>
 
-        <!-- header-nav -->
-        <nav>
-          <ul class="header-nav">
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./index.html">Студия</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link-current" href="./portfolio.html"
-                >Портфолио</a
+        <div class="header-block">
+          <!-- header-nav -->
+          <nav class="nav-block">
+            <ul class="header-nav">
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="./index.html">Студия</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link header-nav__link-current" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="./contacs.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- header-contact  -->
+          <ul class="header-contact">
+            <li class="header-contact__item">
+              <a class="header-contact__link" href="mailto:info@devstudio.com">
+                <svg class="header-contact__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./contacs.html">Контакты</a>
+            <li class="header-contact__item">
+              <a class="header-contact__link" href="tel:+380961111111">
+                <svg class="header-contact__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <!-- header-contact  -->
-        <ul class="header-contact">
-          <li class="header-contact__item">
-            <a class="header-contact__link" href="mailto:info@devstudio.com">
-              <svg class="header-contact__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contact__item">
-            <a class="header-contact__link" href="tel:+380961111111">
-              <svg class="header-contact__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
+        <button data-menu-open class="mob-menu">
+          <svg class="mob-menu__icon" width="40" height="40">
+            <use class="mob-menu__icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
+            <use class="mob-menu__icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
       <div class="header-line"></div>
     </header>
-
     <main>
       <section class="page-section">
         <div class="container">
@@ -80,17 +85,21 @@
               <button class="catalog__button" type="button">Маркетинг</button>
             </li>
           </ul>
-          <!-- каталог услуг -->
+          <!-- catalog -->
           <ul class="gallery">
             <li class="gallery__card">
               <a class="gallery__link" href="">
                 <div class="gallery__block">
-                  <img
+                  <picture>
+                    <source srcset="./images/ph-image/gallery-small.jpg 1x, ./images/ph-image/gallery-small2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/tab-image/gallery-tab.jpg 1x, ./images/tab-image/gallery-tab2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/desk-image/gallery-desktop.jpg 1x, ./images/desk-image/gallery-desktop2x.jpg 2x" media="(min-width:1200px)">
+
+                    <img
                     src="./images/ph-image/gallery-small.jpg"
-                    width="370"
-                    height="294"
                     alt="фото сайта"
                   />
+                  </picture>
                   <div class="gallery__hidden">
                     <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
@@ -108,12 +117,16 @@
             <li class="gallery__card">
               <a class="gallery__link" href="">
                 <div class="gallery__block">
-                  <img
+                <picture>
+                    <source srcset="./images/ph-image/gallery2-small.jpg 1x, ./images/ph-image/gallery2-small2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/tab-image/gallery2-tab.jpg 1x, ./images/tab-image/gallery2-tab2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/desk-image/gallery2-desktop.jpg 1x, ./images/desk-image/gallery2-desktop2x.jpg 2x" media="(min-width:1200px)">
+
+                    <img
                     src="./images/ph-image/gallery2-small.jpg"
-                    width="370"
-                    height="294"
                     alt="фото сайта"
                   />
+                  </picture>
                   <div class="gallery__hidden">
                     <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
@@ -131,12 +144,16 @@
             <li class="gallery__card">
               <a class="gallery__link" href="">
                 <div class="gallery__block">
-                  <img
+                 <picture>
+                    <source srcset="./images/ph-image/gallery3-small.jpg 1x, ./images/ph-image/gallery3-small2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/tab-image/gallery3-tab.jpg 1x, ./images/tab-image/gallery3-tab2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/desk-image/gallery3-desktop.jpg 1x, ./images/desk-image/gallery3-desktop2x.jpg 2x" media="(min-width:1200px)">
+
+                    <img
                     src="./images/ph-image/gallery3-small.jpg"
-                    width="370"
-                    height="294"
                     alt="фото сайта"
                   />
+                  </picture>
                   <div class="gallery__hidden">
                     <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
@@ -154,12 +171,16 @@
             <li class="gallery__card">
               <a class="gallery__link" href="">
                 <div class="gallery__block">
-                  <img
+               <picture>
+                    <source srcset="./images/ph-image/gallery4-small.jpg 1x, ./images/ph-image/gallery4-small2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/tab-image/gallery4-tab.jpg 1x, ./images/tab-image/gallery4-tab2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/desk-image/gallery4-desktop.jpg 1x, ./images/desk-image/gallery4-desktop2x.jpg 2x" media="(min-width:1200px)">
+
+                    <img
                     src="./images/ph-image/gallery4-small.jpg"
-                    width="370"
-                    height="294"
                     alt="фото сайта"
                   />
+                  </picture>
                   <div class="gallery__hidden">
                     <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
@@ -177,12 +198,16 @@
             <li class="gallery__card">
               <a class="gallery__link" href="">
                 <div class="gallery__block">
-                  <img
+                  <picture>
+                    <source srcset="./images/ph-image/gallery5-small.jpg 1x, ./images/ph-image/gallery5-small2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/tab-image/gallery5-tab.jpg 1x, ./images/tab-image/gallery5-tab2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/desk-image/gallery5-desktop.jpg 1x, ./images/desk-image/gallery5-desktop2x.jpg 2x" media="(min-width:1200px)">
+
+                    <img
                     src="./images/ph-image/gallery5-small.jpg"
-                    width="370"
-                    height="294"
                     alt="фото сайта"
                   />
+                  </picture>
                   <div class="gallery__hidden">
                     <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
@@ -200,12 +225,16 @@
             <li class="gallery__card">
               <a class="gallery__link" href="">
                 <div class="gallery__block">
-                  <img
+                 <picture>
+                    <source srcset="./images/ph-image/gallery6-small.jpg 1x, ./images/ph-image/gallery6-small2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/tab-image/gallery6-tab.jpg 1x, ./images/tab-image/gallery6-tab2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/desk-image/gallery6-desktop.jpg 1x, ./images/desk-image/gallery6-desktop2x.jpg 2x" media="(min-width:1200px)">
+
+                    <img
                     src="./images/ph-image/gallery6-small.jpg"
-                    width="370"
-                    height="294"
                     alt="фото сайта"
                   />
+                  </picture>
                   <div class="gallery__hidden">
                     <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
@@ -223,12 +252,16 @@
             <li class="gallery__card">
               <a class="gallery__link" href="">
                 <div class="gallery__block">
-                  <img
+                  <picture>
+                    <source srcset="./images/ph-image/gallery7-small.jpg 1x, ./images/ph-image/gallery7-small2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/tab-image/gallery7-tab.jpg 1x, ./images/tab-image/gallery7-tab2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/desk-image/gallery7-desktop.jpg 1x, ./images/desk-image/gallery7-desktop2x.jpg 2x" media="(min-width:1200px)">
+
+                    <img
                     src="./images/ph-image/gallery7-small.jpg"
-                    width="370"
-                    height="294"
                     alt="фото сайта"
                   />
+                  </picture>
                   <div class="gallery__hidden">
                     <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
@@ -246,12 +279,16 @@
             <li class="gallery__card">
               <a class="gallery__link" href="">
                 <div class="gallery__block">
-                  <img
+                  <picture>
+                    <source srcset="./images/ph-image/gallery8-small.jpg 1x, ./images/ph-image/gallery8-small2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/tab-image/gallery8-tab.jpg 1x, ./images/tab-image/gallery8-tab2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/desk-image/gallery8-desktop.jpg 1x, ./images/desk-image/gallery8-desktop2x.jpg 2x" media="(min-width:1200px)">
+
+                    <img
                     src="./images/ph-image/gallery8-small.jpg"
-                    width="450"
-                    height="294"
                     alt="фото сайта"
                   />
+                  </picture>
                   <div class="gallery__hidden">
                     <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
@@ -270,12 +307,16 @@
             <li class="gallery__card">
               <a class="gallery__link" href="">
                 <div class="gallery__block">
-                  <img
+                 <picture>
+                    <source srcset="./images/ph-image/gallery9-small.jpg 1x, ./images/ph-image/gallery9-small2x.jpg 2x" media="(max-width:767px)">
+                    <source srcset="./images/tab-image/gallery9-tab.jpg 1x, ./images/tab-image/gallery9-tab2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/desk-image/gallery9-desktop.jpg 1x, ./images/desk-image/gallery9-desktop2x.jpg 2x" media="(min-width:1200px)">
+
+                    <img
                     src="./images/ph-image/gallery9-small.jpg"
-                    width="370"
-                    height="294"
                     alt="фото сайта"
                   />
+                  </picture>
                   <div class="gallery__hidden">
                     <p class="gallery__hidden-text">
                       Ресурс предлагает коплексные предложения с разным уровнем функционала и
@@ -295,61 +336,65 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="page-footer">
+     <footer class="page-footer">
       <div class="container footer-block">
-        <div>
-          <!-- logo -->
-          <a class="logo footer-part" href="./index.html"
-            ><span class="logo__blue">Web</span><span class="logo__white">Studio</span>
-          </a>
-          <address>
-            <ul class="footer-adress">
-              <li><a class="footer-adress__white" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+        <div class="footer-tab-geo">
+          <div>
+            <!-- logo -->
+            <a class="logo footer-part" href="./index.html"
+              ><span class="logo__blue">Web</span><span class="logo__white">Studio</span>
+            </a>
+            <address>
+              <ul class="footer-adress">
+                <li><a class="footer-adress__white" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li>
+                  <a class="footer-adress__grey" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li>
+                  <a class="footer-adress__grey" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!-- footer-join -->
+          <div>
+            <b class="footer-join">ПРИСОЕДИНЯЙТЕСЬ</b>
+            <ul class="footer-join__list">
               <li>
-                <a class="footer-adress__grey" href="mailto:info@example.com">info@example.com</a>
+                <a class="footer-join__link" href="" aria-label="Ссылка на Instagram">
+                  <svg class="footer-join__icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li><a class="footer-adress__grey" href="tel:+380991111111">+38 099 111 11 11</a></li>
+              <li>
+                <a class="footer-join__link" href="" aria-label="Ссылка на Twitter">
+                  <svg class="footer-join__icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-join__link" href="" aria-label="Ссылка на Facebook">
+                  <svg class="footer-join__icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-join__link" href="" aria-label="Ссылка на LinkedIn">
+                  <svg class="footer-join__icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
-          </address>
-        </div>
-        <!-- footer-join -->
-        <div>
-          <b class="footer-join">ПРИСОЕДИНЯЙТЕСЬ</b>
-          <ul class="footer-join__list">
-            <li>
-              <a class="footer-join__link" href="" aria-label="Ссылка на Instagram">
-                <svg class="footer-join__icon">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-join__link" href="" aria-label="Ссылка на Twitter">
-                <svg class="footer-join__icon">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-join__link" href="" aria-label="Ссылка на Facebook">
-                <svg class="footer-join__icon">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-join__link" href="" aria-label="Ссылка на LinkedIn">
-                <svg class="footer-join__icon">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <!-- footer-subscribe -->
-        <div>
+        <div class="footer-sub-geo">
           <b class="footer-sub">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
-          <form>
+          <form class="footer-sub__block">
             <input
               class="footer-sub__form"
               type="email"
@@ -367,6 +412,7 @@
           </form>
         </div>
       </div>
+    </footer>
     </footer>
   </body>
 </html>
