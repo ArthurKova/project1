@@ -93,6 +93,14 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
+
+  @media screen and (max-width: 767px) {
+    padding: 77px 24px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 49px 24px;
+  }
 }
 
 .gallery__border {
