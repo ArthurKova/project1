@@ -64,11 +64,13 @@
 }
 
 .gallery__hidden {
+  display: block;
   position: absolute;
   content: '';
 
-  bottom: -294px;
+  bottom: -100%;
   left: 0;
+  max-height: 100%;
   user-select: none;
   max-width: 450px;
   opacity: 0;
